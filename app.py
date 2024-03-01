@@ -164,6 +164,7 @@ def update_latest_data():
     global latest_data
     response = obj1.getworkforoperator_model()
     result = response.json
+    print(result)
     latest_data = result['processdata']
 
 # WebSocket event handler
